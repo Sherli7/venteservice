@@ -1,0 +1,383 @@
+/* Couleurs personnalisées */
+:root {
+  --primary-color: #144323;
+  --secondary-color: #521e58;
+  --accent-color: #3b94c7;
+  --text-color: #9b9d9e;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  width: 127px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.service-card.selected:hover {
+  background-color: #0056b3;
+}
+
+.modules-container {
+  display: flex;
+  flex-direction: column; /* Afficher les modules en colonne */
+  gap: 20px; /* Espacement entre les modules */
+  margin-top: 20px;
+  align-items: center; /* Centrer les éléments horizontalement */
+  text-align: center;
+  
+}
+
+.module-card {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.module-card:hover {
+  background-color: #f0f0f0;
+}
+
+.module-card.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.module-card.selected:hover {
+  background-color: #0056b3;
+}
+
+.service-button {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.module-button {
+  display: inline-block; /* Afficher en ligne */
+  margin: 5px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.dialog-bot {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.dialog-bot h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.dialog-bot p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.dialog-bot ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dialog-bot ul li {
+  margin-bottom: 5px;
+}
+
+.dialog-bot strong {
+  font-weight: bold;
+}
+
+.dialog-bot .email-content {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.dialog-bot .service-list {
+  margin-left: 20px;
+}
+
+.dialog-bot .service-list li {
+  margin-bottom: 5px;
+}
+
+.dialog-bot .total-price {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.dialog-bot .user-info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: block;
+  max-width: 2.7cm;
+  width: 100%;
+  height: auto;
+}
+
+/* Style du loader */
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  display: none;
+  z-index: 1000; /* Pour être sûr que le loader apparaît au-dessus de tout */
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.toastify {
+  top: 20px; /* Ajuster la position verticale */
+  right: 20px; /* Ajuster la position horizontale */
+  z-index: 9999; /* Pour être sûr que le toast apparaît au-dessus de tout */
+}
+
+.toast-card {
+  width: 300px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.toast-success {
+  background-color: #28a745; /* Couleur de fond pour succès */
+  color: #fff;
+}
+
+.toast-error {
+  background-color: #dc3545; /* Couleur de fond pour erreur */
+  color: #fff;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Global Stylings */
+:root {
+  --primary-color: #144323;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+/* Global Stylings */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Progressbar */
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 2rem 0 4rem;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: 0.3s;
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progress-step-active {
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+}
+
+/* Form */
+.form {
+  width: clamp(320px, 30%, 430px);
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+}
+
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.form-step-active {
+  display: block;
+}
+
+.input-group {
+  margin: 2rem 0;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/* Button */
+.btns-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}

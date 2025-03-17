@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Service - Sélection</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <img src="images/logoOBIV.jpeg" alt="Logo Hello Service" class="logo" style="height: 50px; margin-right: 16px;">
+      <span class="mdl-layout-title">Hello Service</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Accueil</a>
+      </nav>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="container mdl-shadow--2dp mdl-color--white mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+          <h1 class="mt-5">Vos Services</h1>
+          <div class="progressbar" id="serviceProgress" role="progressbar" aria-valuemin="0" aria-valuemax="2">
+            <div class="progress" id="progress" aria-hidden="true"></div>
+            <div class="progress-step progress-step-active" data-title="Étape 1"></div>
+            <div class="progress-step" data-title="Étape 2"></div>
+          </div>
+          <div class="services-container" id="servicesContainer" aria-live="polite"></div>
+          <div class="modules-container" id="modulesContainer" style="display: none;"></div>
+          <div class="dialog-bot mt-3" aria-live="polite">
+            <h2>Votre sélection</h2>
+          </div>
+          <button id="finishButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mt-3" style="display: none;">
+            Terminer
+          </button>
+          <div id="personalInfoFormContainer" style="display: none;">
+            <form id="personalInfoForm" class="form-container">
+              <div class="form-step form-step-active">
+                <h2>Étape 1 : Informations personnelles</h2>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="name" name="name" required>
+                  <label class="mdl-textfield__label" for="name">Nom</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="email" id="email" name="email" required>
+                  <label class="mdl-textfield__label" for="email">Email</label>
+                </div>
+                <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-next">Suivant</button>
+              </div>
+              <div class="form-step">
+                <h2>Étape 2 : Confirmation</h2>
+                <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-prev">Précédent</button>
+                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Envoyer</button>
+              </div>
+            </form>
+          </div>
+          <div id="loader" class="loader" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="progress.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+  "services": [
+    {
+      "name": "Audit",
+      "modules": [
+        {
+          "name": "Analyse des risques"
+        },
+        {
+          "name": "Audit financier"
+        },
+        {
+          "name": "Audit organisationnel"
+        },
+        {
+          "name": "Audit interne"
+        }
+      ]
+    },
+    {
+      "name": "Conseil",
+      "modules": [
+        {
+          "name": "Stratégie d'entreprise"
+        },
+        {
+          "name": "Gestion de projet"
+        },
+        {
+          "name": "Management des équipes"
+        }
+      ]
+    },
+    {
+      "name": "Coaching",
+      "modules": [
+        {
+          "name": "Coaching individuel"
+        },
+        {
+          "name": "Coaching d'équipe"
+        }
+      ]
+    },
+    {
+      "name": "Recherches",
+      "modules": [
+        {
+          "name": "Analyse de marché"
+        },
+        {
+          "name": "Études de faisabilité"
+        }
+      ]
+    },
+    {
+      "name": "Formations",
+      "modules": [
+        {
+          "name": "Formation en gestion"
+        },
+        {
+          "name": "Formation en communication"
+        },
+        {
+          "name": "Formation en leadership"
+        },
+        {"name": "GESTION AXEE SUR LES RESULTATS (G.A.R)"},
+        {"name": "OUTILS DE PLANIFICATION"},
+        {"name": "GESTION DE PROJET"},
+        {"name": "CONTROLE DES ENTITES PUBLIQUES AU CAMEROUN"},
+        {"name": "GESTION DES ORGANISATIONS PUBLIQUES"},
+        {"name": "REFORME DES ENTITES PUBLIQUES AU CAMEROUN"}
+      ]
+    },
+    {
+      "name": "Études",
+      "modules": [
+        {
+          "name": "Étude de marché"
+        },
+        {
+          "name": "Étude de satisfaction client"
+        },
+        {
+          "name": "BUDGET PROGRAMME"
+        }
+        
+      ]
+    }
+  ]
+}
