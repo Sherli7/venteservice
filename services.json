@@ -3,36 +3,20 @@
     {
       "name": "Audit",
       "modules": [
-        {
-          "name": "Analyse des risques"
-        },
-        {
-          "name": "Audit financier"
-        },
-        {
-          "name": "Audit organisationnel"
-        },
-        {
-          "name": "Audit interne"
-        }
+        {"name": "Analyse des risques"},
+        {"name": "Audit financier"},
+        {"name": "Audit organisationnel"},
+        {"name": "Audit interne"}
       ]
     },
-    {
-      "name": "Conseil",
+    {"name": "Conseil",
       "modules": [
-        {
-          "name": "Stratégie d'entreprise"
-        },
-        {
-          "name": "Gestion de projet"
-        },
-        {
-          "name": "Management des équipes"
-        }
+        {"name": "Stratégie d'entreprise"},
+        {"name": "Gestion de projet"},
+        {"name": "Management des équipes"}
       ]
     },
-    {
-      "name": "Coaching",
+    {"name": "Coaching",
       "modules": [
         {
           "name": "Coaching individuel"

@@ -5,7 +5,7 @@ const path = require('path');
 const apiRoutes = require('./routes/api');
 
 const app = express();
-const PORT = process.env.PORT || 3007;
+const PORT = process.env.PORT || 3005;
 
 // Middleware
 app.use(express.json());
