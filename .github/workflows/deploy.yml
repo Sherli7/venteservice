@@ -41,11 +41,3 @@ jobs:
           # Redémarrer l'application avec PM2
           pm2 restart obivservices || pm2 start npm --name "obivservices" -- start
         EOF
-
-    # Étape 4 : Notifier en cas d'échec (optionnel)
-    - name: Notify on Failure
-      if: failure()
-      run: |
-        curl -X POST -H 'Content-type: application/json' \
-        --data '{"text":"Deployment to VPS failed! Check the GitHub Actions logs."}' \
-        ${{ secrets.WEBHOOK_URL }}
