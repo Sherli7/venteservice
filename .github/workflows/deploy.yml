@@ -32,7 +32,7 @@ jobs:
           # S'assurer que Git est configuré pour accepter les pulls
           git config --global --add safe.directory /var/www/html/obivservices
 
-          # Mettre à jour le code
+          # Mettre à jour le code 
           git pull origin main
 
           # Installer les dépendances
