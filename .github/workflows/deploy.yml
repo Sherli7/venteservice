@@ -38,6 +38,6 @@ jobs:
           # Installer les dépendances
           npm install
 
-          # Redémarrer l'application avec PM2
-          pm2 restart obivservices || pm2 start npm --name "obivservices" -- start
+          # Redémarrer l'application avec PM2 en utilisant ecosystem.config.js
+          pm2 restart obivservices || pm2 start ecosystem.config.js
         EOF
