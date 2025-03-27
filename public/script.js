@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => toastrDiv.remove(), 5000);
   }
 
-  const API_URL = window.APP_CONFIG?.API_URL || 'https://helloservices.com/api';
+  const API_URL = window.APP_CONFIG?.API_URL || 'https://helloservices.edocsflow.com/api';
   const servicesContainer = document.getElementById('servicesContainer');
   const dialogBot = document.querySelector('.dialog-bot');
   const nextToInfoButton = document.getElementById('nextToInfoButton');
